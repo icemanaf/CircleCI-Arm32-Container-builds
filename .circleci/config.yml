@@ -11,4 +11,6 @@ jobs:
       image: ubuntu-1604:202007-01
      
     steps:
-      - run: pwd
+    #install qemu
+      - run: sudo apt-get install qemu binfmt-support qemu-user-static \
+      docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
