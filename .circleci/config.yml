@@ -30,4 +30,4 @@ jobs:
       - run:
           name:
           command: |
-            DOCKER_CLI_EXPERIMENTAL=enabled docker buildx build --platform linux/arm/v7
+            DOCKER_CLI_EXPERIMENTAL=enabled docker buildx build --platform linux/arm/v7 .
