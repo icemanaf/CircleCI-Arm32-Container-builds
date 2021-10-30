@@ -1,4 +1,5 @@
 version: 2.1
+# copied from https://github.com/namiops/circleci-multiarch/blob/main/.circleci/config.yml with small modifications to support arm7
 commands:
   setup:
     steps:
