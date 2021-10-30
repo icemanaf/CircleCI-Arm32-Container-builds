@@ -12,7 +12,7 @@ commands:
       - run:
           name: Check versions
           command: |
-            qemu-aarch64-static --version
+            qemu-arm-static --version
             update-binfmts --version 
       - run:
           name: Create builder
@@ -30,4 +30,4 @@ jobs:
       - run:
           name:
           command: |
-            docker buildx ls
+            DOCKER_CLI_EXPERIMENTAL=enabled docker buildx ls
