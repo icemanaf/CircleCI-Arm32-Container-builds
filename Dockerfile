@@ -11,16 +11,10 @@ RUN apt-get install -y wget libaom0 libatk-bridge2.0-0 libatk1.0-0 libatlas3-bas
  libvorbisfile3  libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1 libwebp6 libwebpmux3 \
  libxcb-render0 libxcb-shm0 libxcomposite1 libxcursor1 \
  libxdamage1 libxfixes3 libxi6 libxinerama1 libxkbcommon0 libxrandr2 libxrender1 libxvidcore4 libzvbi0 \
- libatlas3-base libgfortran5
-
-RUN wget https://www.piwheels.org/simple/opencv-python/opencv_python-4.5.1.48-cp37-cp37m-linux_armv7l.whl#sha256=10972196848a28d1b89584784475c51eae3f160491750adc53165916767b29cd
-
-RUN wget https://www.piwheels.org/simple/numpy/numpy-1.23.1-cp39-cp39-linux_armv7l.whl#sha256=c445b798864ecce1dc932b1b530163300db9f8d57eb0c10f31f4661aa70bc15e
+ libatlas3-base libgfortran5 
 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install numpy-1.23.1-cp39-cp39-linux_armv7l.whl
+RUN pip3 install python3-numpy
 
-RUN pip3 install opencv_python-4.5.1.48-cp37-cp37m-linux_armv7l.whl
-
-RUN rm numpy-1.23.1-cp39-cp39-linux_armv7l.whl opencv_python-4.5.1.48-cp37-cp37m-linux_armv7l.whl
+RUN pip3 pip install opencv-python-headless
