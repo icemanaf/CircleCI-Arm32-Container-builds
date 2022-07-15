@@ -15,6 +15,6 @@ RUN apt-get install -y wget libaom0 libatk-bridge2.0-0 libatk1.0-0 libatlas3-bas
 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install python3-numpy
+RUN pip3 install numpy
 
-RUN pip3 pip install opencv-python-headless
+RUN pip3 install opencv-python-headless
