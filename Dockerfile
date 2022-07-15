@@ -1,4 +1,4 @@
-FROM arm32v7/python:3.10.5-slim-bullseye
+FROM arm32v7/python:3.9-slim-bullseye
 
 RUN apt-get update
 
