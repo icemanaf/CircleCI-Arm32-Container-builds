@@ -11,7 +11,7 @@ RUN apt-get install -y wget libaom0 libatk-bridge2.0-0 libatk1.0-0 libatlas3-bas
  libvorbisfile3  libwavpack1 libwayland-client0 libwayland-cursor0 libwayland-egl1 libwebp6 libwebpmux3 \
  libxcb-render0 libxcb-shm0 libxcomposite1 libxcursor1 \
  libxdamage1 libxfixes3 libxi6 libxinerama1 libxkbcommon0 libxrandr2 libxrender1 libxvidcore4 libzvbi0 \
- libatlas3-base libgfortran5 build-essentials
+ libatlas3-base libgfortran5 build-essential
 
 RUN wget https://www.piwheels.org/simple/opencv-python/opencv_python-4.6.0.66-cp39-cp39-linux_armv7l.whl#sha256=c1360e46e5ebd47a92e00c1f75c7d293d6ffd00d7f9ff06666f9af05eff2094f
 
