@@ -15,12 +15,11 @@ RUN apt-get install -y wget libaom0 libatk-bridge2.0-0 libatk1.0-0 libatlas3-bas
 
 RUN wget https://www.piwheels.org/simple/opencv-python/opencv_python-4.6.0.66-cp39-cp39-linux_armv7l.whl#sha256=c1360e46e5ebd47a92e00c1f75c7d293d6ffd00d7f9ff06666f9af05eff2094f
 
-RUN wget https://www.piwheels.org/simple/numpy/numpy-1.23.1-cp39-cp39-linux_armv7l.whl#sha256=c445b798864ecce1dc932b1b530163300db9f8d57eb0c10f31f4661aa70bc15e
 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install numpy-1.23.1-cp39-cp39-linux_armv7l.whl
+pip3 install numpy==1.23.1
 
 RUN pip3 install opencv_python-4.6.0.66-cp39-cp39-linux_armv7l.whl
 
-RUN rm numpy-1.23.1-cp39-cp39-linux_armv7l.whl opencv_python-4.6.0.66-cp39-cp39-linux_armv7l.whl
+RUN rm  opencv_python-4.6.0.66-cp39-cp39-linux_armv7l.whl
