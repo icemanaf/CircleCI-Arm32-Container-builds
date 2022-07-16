@@ -18,7 +18,7 @@ RUN wget https://www.piwheels.org/simple/opencv-python/opencv_python-4.6.0.66-cp
 
 RUN pip3 install --upgrade pip
 
-pip3 install numpy==1.23.1
+RUN pip3 install numpy==1.23.1
 
 RUN pip3 install opencv_python-4.6.0.66-cp39-cp39-linux_armv7l.whl
 
